@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  About
+{% endblock %}
+
+{% block body %}
+
+{% load static %}
+
+<style>
+  /* Stylish and Responsive CSS */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+  }
+
+  .containers {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #777;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .containers {
+      width: 70%;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+  .containers{
+    margin: 7rem;
+    align-items: center;
+}
+</style>
+<div class="containers">
+  <h1>Welcome to Our Hosspital</h1>
+  <hr>
+  <p>At Our Hospital, we are committed to providing exceptional healthcare services to our patients. Our team of highly qualified and experienced medical professionals work tirelessly to ensure the well-being and recovery of our patients.</p>
+  <p>With state-of-the-art facilities and cutting-edge technology, we offer a wide range of medical services including general medicine, surgery, pediatrics, obstetrics and gynecology, cardiology, oncology, and more. We strive to deliver compassionate care, tailored to the unique needs of each patient.</p>
+  <img class="img-fluid" src="{% static '/images/hospitalimg.jpg' %}" alt="Hospital Image">
+  <p>If you or your loved ones require medical care, trust Our Hospital to provide comprehensive and compassionate healthcare services. Contact us today to schedule an appointment or to learn more about our services.</p>
+  <p>Contact Information:</p>
+  <ul>
+    <li>Address: 35/37 nice Road, place place – 11150026<br>City, State ZIP</li>
+    <li>Phone: + 01 234 567 88 <br>
+      + 01 234 567 88</li>
+    <li>Email: info@ourhospital.com</li>
+  </ul>
+</div>
+{% endblock %}

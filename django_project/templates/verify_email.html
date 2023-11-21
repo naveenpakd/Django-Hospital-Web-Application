@@ -1,0 +1,19 @@
+<!-- verify_email.html -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+  <h1 class="mt-5">Verify Email</h1>
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+    <button type="submit">Verify Email</button>
+  </form>
+{% endblock %}
+dvfgbhnm

@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+  Userdetails
+{% endblock %}
+
+<style>
+  .card-body .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .card-body h5 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-body h5 {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
+
+</style>
+
+{% block body%} 
+
+<!-- <hr>
+<h4 style="text-align: center; padding-top: 101px;">Your Detials</h4>
+<hr>
+<div class="container w-70  text-center p-3 my-5 bg-info">
+    <h4>{{user.first_name}}</h4>
+    <h4>{{user.last_name}}</h4>
+    <h4>{{user.username}}</h4>
+    <h4>{{user.email}}</h4>
+    </form>
+</div> -->
+
+
+
+
+<center>
+<section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+         
+        </div>
+      </div>
+  
+      <div class="row pt-5 justify-content-center">
+        <div class="col-md-4 col-lg-3">
+          <div class="card mb-4 pl-md-3 pl-lg-5">
+            <div class="card-body text-center">
+              <img src="static\images\user.png"
+                class="rounded-circle img-fluid" style="width: 150px;">
+              <h5 class="my-3">{{user.first_name}} {{user.last_name}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">First Name</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.first_name}}</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Last Name</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.last_name}}</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">User Name</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.username}}</p>
+                </div>
+              </div>
+              <hr>
+              
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.email}}</p>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Date Of LOgined</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.date_joined}}</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Last Joined</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{user.last_login}}</p>
+                </div>
+              </div>
+              <hr>
+
+              <!-- <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Address</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{booking.p_name}}</p>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+</center>
+    
+{% endblock %}

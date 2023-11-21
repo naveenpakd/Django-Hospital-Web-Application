@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  About
+{% endblock %}
+
+{% block body %}
+
+{% load static %}
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .containers {
+      max-width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      font-size: 24px;
+      color: #666;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #777;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #777;
+    }
+
+    .contact-info p {
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #0056b3;
+    }
+  </style>
+
+
+
+  <div class="containers mt-5">
+    <h1 class="text-success">Contact Us</h1>
+    <p>If you have any questions or concerns, please don't hesitate to get in touch with us.</p>
+    <hr>
+    <div class="row contact-info">
+      <div class="col-md-4">
+        <i class="fas fa-map-marker-alt"></i>
+        <h5>Address</h5>
+        <p>35/37 Nice Road<br>
+          Place Place – 11150026</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-envelope"></i>
+        <h5>Email</h5>
+        <p><a href="mailto:info@ourhospital.com">info@ourhospital.com</a></p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-phone"></i>
+        <h5>Phone</h5>
+        <p>+01 234 567 88<br>
+          +01 234 567 88</p>
+      </div>
+    </div>
+    <hr>
+    <p class="mt-5">Follow us on <a href="https://www.facebook.com/ourhospital" target="_blank">Facebook</a> and <a href="https://twitter.com/ourhospital" target="_blank">Twitter</a> for updates and news.</p>
+  </div>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+
+  {% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ Edit Booking
+{% endblock %}
+
+{% block body%} 
+<hr>
+<h4 style="text-align: center; padding-top: 101px;">Make An Appointment</h4>
+<hr>
+
+    <div class="container w-70  p-3 my-5 bg-dark text-white">
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        
+        <!-- <input type="email" name="p_email" placeholder="p_email"> <br> 
+        <input type="date" name="booking_date" placeholder="p_email"> <br> -->
+        
+        <!-- <a href="" class="btn btn-primary mb-4">Update</a> -->
+        <button class="btn btn-primary mb-4" type="submit">Update</button>
+    </form>
+    </div>
+
+{% endblock %}

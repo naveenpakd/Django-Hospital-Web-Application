@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5" >
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card my-5">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="text-center">Make An Appointment</h4>
+                </div>
+                <div class="card-body">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+
+                        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if messages %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        {% for message in messages %}
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% endblock %}

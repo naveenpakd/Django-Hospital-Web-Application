@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Hospital Service Portal
+{% endblock %}
+
+{% block body%} 
+     
+      <style>
+
+        /* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font styles for the page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+  /* background-color: #007bff; */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #0a0b0b;
+}
+
+/* Style the main content section */
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #1212cc;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Style the contact section */
+#contact {
+  /* padding: 1rem; */
+  background-color: #f8f9fa;
+}
+
+#contact p {
+  margin-bottom: 0.5rem;
+}
+
+.containers{
+    margin: 7rem;
+}
+
+hr{
+    color: #333;
+}
+
+      </style>
+
+    <div class="containers ">  
+    </head>
+    <body>
+      <header>
+        <h1>Hospital Service Portal</h1>
+        <hr>
+      </header>
+      <nav>
+        <ul>
+          <li><a class="text-decoration-none" href="#emergency">Emergency Services</a></li>
+          <li><a class="text-decoration-none" href="#appointments">Appointments</a></li>
+          <li><a class="text-decoration-none" href="#pharmacy">Pharmacy</a></li>
+          <li><a class="text-decoration-none" href="#labs">Laboratory Services</a></li>
+          <li><a class="text-decoration-none" href="#billing">Billing</a></li>
+          <li><a class="text-decoration-none" href="contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="emergency">
+          <h2>Emergency Services</h2>
+          <p>If you are experiencing a medical emergency, please call 911 or go to the nearest emergency room immediately.</p>
+          <p>For non-life-threatening emergencies, you can visit our hospital's emergency department. Our experienced medical staff is available 24/7 to provide urgent medical care.</p>
+        </section>
+        <section id="appointments">
+          <h2>Appointments</h2>
+          <p>To schedule an appointment with one of our healthcare providers, please use our online appointment booking system or call our appointment hotline at [phone number].</p>
+          <p>We offer a wide range of medical services, including general medicine, pediatrics, obstetrics and gynecology, cardiology, orthopedics, and more. Our expert healthcare providers are committed to providing personalized care for all our patients.</p>
+        </section>
+        <section id="pharmacy">
+          <h2>Pharmacy</h2>
+          <p>Our hospital has an in-house pharmacy that provides a wide range of prescription medications and over-the-counter products to meet the medication needs of our patients.</p>
+          <p>Our pharmacists are available to answer any questions you may have about your medications, provide medication counseling, and ensure that you are taking your medications safely and effectively.</p>
+        </section>
+        <section id="labs">
+          <h2>Laboratory Services</h2>
+          <p>Our hospital's laboratory services are equipped with state-of-the-art technology and staffed by highly skilled laboratory professionals who perform a wide range of diagnostic tests to support patient care.</p>
+          <p>We offer a comprehensive menu of laboratory tests, including blood tests, urine tests, microbiology, pathology, and more. Results are typically available within a timely manner to aid in diagnosis and treatment planning.</p>
+        </section>
+        <section id="billing">
+          <h2>Billing</h2>
+          <p>Our hospital's billing department is dedicated to helping patients understand their hospital bills and insurance coverage.</p>
+          <p>If you have questions about your hospital bill or need assistance with insurance claims, our billing team is available to assist you. You can contact our billing department at [phone number] or visit our hospital in person.</p>
+        </section>
+        <!-- <section id="contact">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, concerns, or feedback, please feel free to contact us. Our hospital's contact information is as follows:</p>
+          <p>Address: [Hospital Name], [Hospital Address]</p>
+          <p>Phone: [Hospital Phone Number
+        </section> -->
+
+    </div>
+    
+    {% endblock %}
